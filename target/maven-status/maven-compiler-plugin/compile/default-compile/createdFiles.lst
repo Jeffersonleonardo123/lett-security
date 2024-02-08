@@ -1,0 +1,11 @@
+com/br/lett/security/SecurityApplication.class
+com/br/lett/security/dto/DataAutenticationDto.class
+com/br/lett/security/controller/AutenticacaoController.class
+com/br/lett/security/service/AutenticacaoService.class
+com/br/lett/security/infra/TokenService.class
+com/br/lett/security/infra/exception/TratadorDeErros$DadosErroValidacao.class
+com/br/lett/security/infra/exception/TratadorDeErros.class
+com/br/lett/security/infra/SecurityConfigurations.class
+com/br/lett/security/infra/DadosTokenJWT.class
+com/br/lett/security/repository/UserRepository.class
+com/br/lett/security/model/User.class

@@ -1,0 +1,10 @@
+/home/linux/projetos/lett/security/src/main/java/com/br/lett/security/infra/SecurityConfigurations.java
+/home/linux/projetos/lett/security/src/main/java/com/br/lett/security/model/User.java
+/home/linux/projetos/lett/security/src/main/java/com/br/lett/security/SecurityApplication.java
+/home/linux/projetos/lett/security/src/main/java/com/br/lett/security/controller/AutenticacaoController.java
+/home/linux/projetos/lett/security/src/main/java/com/br/lett/security/infra/TokenService.java
+/home/linux/projetos/lett/security/src/main/java/com/br/lett/security/infra/DadosTokenJWT.java
+/home/linux/projetos/lett/security/src/main/java/com/br/lett/security/infra/exception/TratadorDeErros.java
+/home/linux/projetos/lett/security/src/main/java/com/br/lett/security/service/AutenticacaoService.java
+/home/linux/projetos/lett/security/src/main/java/com/br/lett/security/repository/UserRepository.java
+/home/linux/projetos/lett/security/src/main/java/com/br/lett/security/dto/DataAutenticationDto.java
