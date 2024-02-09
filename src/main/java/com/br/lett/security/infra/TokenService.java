@@ -19,14 +19,14 @@ public class TokenService {
     @Value("${api.security.token.secret}")
     private String secret;
 
-    public String gerarToken(User usuario) {
+    public String getToken(User user) {
         try {
             var algoritmo = Algorithm.HMAC256(secret);
             return JWT.create()
                     .withIssuer("API Lett-Security")
-                    .withSubject(usuario.getLogin())
-                    .withClaim("company", usuario.getCompany())
-                    .withExpiresAt(dataExpiracao())
+                    .withSubject(user.getLogin())
+                    .withClaim("company", user.getCompany())
+                    .withExpiresAt(dateExpire())
                     .sign(algoritmo);
         } catch (JWTCreationException exception){
             throw new RuntimeException("erro ao gerar token jwt", exception);
@@ -60,8 +60,8 @@ public class TokenService {
         }
     }
 
-    private Instant dataExpiracao() {
-        return LocalDateTime.now().plusHours(2).toInstant(ZoneOffset.of("-03:00"));
+    private Instant dateExpire() {
+        return LocalDateTime.now().plusDays(1).toInstant(ZoneOffset.of("-03:00"));
     }
 
 }
